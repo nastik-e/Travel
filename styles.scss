@@ -1,0 +1,40 @@
+$orange: #f2785c;
+$blue: #0D606F;
+$white: #FFFFFF;
+
+%font-red-hat-text {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+
+body {
+  font-family: "Aleo", serif;
+  width: 1440px;
+  margin: 0px auto;
+  .header {
+    @extend %font-red-hat-text;
+    color: $white;
+    background-color: $orange;
+    opacity: 70%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .header__logo {
+      font-family: "Magra", sans-serif;
+    }
+    .nav__menu {
+      display: flex;
+      list-style-type: none;
+    }
+    .button {
+background-color: $blue;
+color: $white;
+border: none;
+border-radius: 10px;
+    }
+    .header__button {
+        width: 103px;
+    }
+  }
+}
